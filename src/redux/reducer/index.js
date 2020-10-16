@@ -7,7 +7,7 @@ import categoryListReducer from "./categoryListReducer";
 //combining all reducers
 const rootReducer = combineReducers({
   changeCategoryReducer,
-  categoryListReducer,
+  categoryListReducer
 });
 
 export default rootReducer;
