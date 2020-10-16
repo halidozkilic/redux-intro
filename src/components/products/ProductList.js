@@ -11,7 +11,7 @@ class ProductList extends Component {
   render() {
     return (
       <div>
-        <h3>
+       
           <Badge color="info">Products</Badge>
           <Badge color="success">
             {this.props.currentCategory.categoryName}
@@ -35,6 +35,7 @@ class ProductList extends Component {
                 <td>{product.unitPrice}</td>
                 <td>{product.quantityPerUnit}</td>
                 <td>{product.unitsInStock}</td>
+                
                 </tr>
               ))}
                
@@ -42,7 +43,7 @@ class ProductList extends Component {
               
             </tbody>
           </Table>
-        </h3>
+        
       </div>
     );
   }
