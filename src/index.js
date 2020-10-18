@@ -4,8 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'alertifyjs/build/css/alertify.min.css'
 import App from './components/root/App';
 import * as serviceWorker from './serviceWorker';
+
+import {BrowserRouter} from "react-router-dom";
+
 import { Provider } from 'react-redux';
 //use provider for redux!
+
 
 import configureStore from "./redux/reducer/configureStore"
 
@@ -13,7 +17,10 @@ const store=configureStore();
 
 ReactDOM.render(
   <React.StrictMode>
-   <Provider store={store}> <App /></Provider> 
+    <BrowserRouter>
+    <Provider store={store}> <App /></Provider> 
+    </BrowserRouter>
+  
   </React.StrictMode>,
   document.getElementById('root')
 );
